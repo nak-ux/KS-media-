@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KS Media House | Photography & Art Services</title>
+
+  <style>
+    /* === COLOR PALETTE === */
+    :root {
+      --primary: #ffcc00;
+      --secondary: #000000;
+      --text: #222222;
+      --bg: #ffffff;
+      --light: #f9f9f9;
+    }
+
+    /* === RESET === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* === CONTAINER === */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* === HEADER === */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, var(--primary) 0%, #fff6c0 100%);
+      border-radius: 0 0 60px 60px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: var(--secondary);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: var(--secondary);
+      opacity: 0.8;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* === SERVICES SECTION === */
+    section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      color: var(--secondary);
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeUp 1.2s ease both;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    /* === LOCATION SECTION === */
+    #location p {
+      background: var(--light);
+      border-left: 4px solid var(--primary);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* === CTA BUTTON === */
+    .cta {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--secondary);
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 12px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .cta:hover {
+      background-color: var(--secondary);
+      color: var(--primary);
+      transform: scale(1.05);
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      background: var(--secondary);
+      color: #fff;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-top: 5px solid var(--primary);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      .service-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KS Media House</h1>
+    <p>Capturing moments. Creating memories. Delivering art.</p>
+  </header>
+
+  <div class="container">
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>💍 Weddings</h3>
+          <p>Elegant wedding photography capturing every emotion and timeless moment.</p>
+        </div>
+        <div class="service-card">
+          <h3>🎓 Graduations</h3>
+          <p>Celebrate your achievement with professional, vibrant graduation portraits.</p>
+        </div>
+        <div class="service-card">
+          <h3>🍲 Chilanga Mulilo</h3>
+          <p>Traditional event coverage with rich, colorful storytelling imagery.</p>
+        </div>
+        <div class="service-card">
+          <h3>🎈 Kitchen Parties</h3>
+          <p>Capture the joy, fun, and laughter with creative photography sessions.</p>
+        </div>
+        <div class="service-card">
+          <h3>🎤 Concerts & Festivals</h3>
+          <p>Dynamic event coverage with professional editing for high-impact visuals.</p>
+        </div>
+        <div class="service-card">
+          <h3>🖼️ Portrait & Art Shoots</h3>
+          <p>Custom artistic sessions designed to showcase your personality and vision.</p>
+        </div>
+      </div>
+      <center>
+        <a href="tel:0974265302" class="cta">Book a Session</a>
+      </center>
+    </section>
+
+    <section id="location">
+      <h2>Our Location</h2>
+      <p>
+        We’re proudly based in <strong>Lusaka, Zingalume (Top View Side)</strong> — offering studio and on-location photography services across Zambia.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <h3>Contact Us</h3>
+    <p>📞 <a href="tel:0974265302">0974265302</a> | <a href="tel:0777192709">0777192709</a></p>
+    <p>✉️ <a href="mailto:ksmediahouse@gmail.com">ksmediahouse@gmail.com</a></p>
+    <p style="margin-top: 15px; font-size: 0.9em;">© 2024 KS Media House. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
